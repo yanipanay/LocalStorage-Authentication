@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Oswald:wght@200;300;400;700&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.menuItems{
+    display: flex;
+    gap:20px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 600px;
+    margin: auto;
+    align-self: center;
+    padding-top: 20vh;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+form input{
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 16px;
+    padding:10px;
+}
+
+button{
+    font-size: 23px;
+    width:fit-content;
+    padding :10px 30px;
+    margin-top: 15px;
+}
+
+
+.error{
+    color: red;
+    padding: 10px 0;
+}
+
+.success{
+    color: green;
+    padding: 10px 0;
+}
+
+.detail{
+    font-size: 20px;
+    padding: 10px;
+}
