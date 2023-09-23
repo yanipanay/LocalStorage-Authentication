@@ -1,6 +1,6 @@
 const user = JSON.parse(localStorage.getItem("userState"));
 const logoutBtn = document.getElementById("logoutBtn");
-console.log(user);
+// console.log(user);
 if (user.token == undefined) window.location.href = "./index.html";
 
 const detailsContainer = document.getElementById("detailsContainer");
@@ -14,6 +14,11 @@ const email = document.createElement("div");
 email.className = "detail";
 email.innerText = `Email : ${user.email}`;
 detailsContainer.appendChild(email);
+
+const token = document.createElement("div");
+token.className = "detail";
+token.innerText = `Token : ${user.token}`;
+detailsContainer.appendChild(token);
 
 const password = document.createElement("div");
 password.className = "detail";

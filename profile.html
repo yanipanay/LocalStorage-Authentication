@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="name">Header</div>
-      <div class="menuItems">
-        <div class="signup">Signup</div>
-        <div class="profile">Profile</div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="container">
+      <div>
+        <div class="suceessMessage"><h1>Signup Successful!!</h1></div>
+        <div class="ProfileDetails">
+          <h1>Profile</h1>
+          <div class="avatar">
+            <div class="A_head"></div>
+            <div class="shoulders"></div>
+          </div>
+          <div class="details" id="detailsContainer"></div>
+          <button class="logoutBtn" id="logoutBtn">Logout</button>
+        </div>
       </div>
-    </header>
-    <section>
-      <div class="title">Profile</div>
-      <div class="details" id="detailsContainer"></div>
-      <button class="logoutBtn" id="logoutBtn">Logout</button>
-    </section>
+    </div>
+
     <script src="./validate.js"></script>
   </body>
 </html>

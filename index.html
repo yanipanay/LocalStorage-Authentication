@@ -7,46 +7,26 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div>Header</div>
-      <div class="menuItems">
-        <div class="signup">Signup</div>
-        <div class="profile">Profile</div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="container">
+      <div class="signupForm">
+        <p>Welcome back!</p>
+        <h1>Sign up to your account</h1>
+        <form action="" class="details">
+          <label for="name"> Your Name</label>
+          <input type="text" class="fullname" name="name" id="name" />
+          <label for="Email"> Your Email</label>
+          <input type="email" class="email" name="email" id="email" />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <label for="passwordC">Confirm Password</label>
+          <input type="password" name="passwordC" id="passwordC" />
+        </form>
+        <div class="message" id="messageContainer"></div>
+        <button type="button" class="signUpBtn" id="signUpBtn">Continue</button>
       </div>
-    </header>
-    <section class="signupForm">
-      <div class="title">Signup</div>
-      <form action="" class="details">
-        <input
-          type="text"
-          class="fullname"
-          name="name"
-          id="name"
-          placeholder="Full Name"
-        />
-        <input
-          type="email"
-          class="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-        />
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-        />
-        <input
-          type="password"
-          name="passwordC"
-          id="passwordC"
-          placeholder="Confirm Password"
-        />
-      </form>
-      <div class="message" id="messageContainer"></div>
-      <button type="button" class="signUpBtn" id="signUpBtn">Signup</button>
-    </section>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

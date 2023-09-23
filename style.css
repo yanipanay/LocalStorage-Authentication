@@ -1,59 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Oswald:wght@200;300;400;700&display=swap');
 
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: black;
-    color: white;
     font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Back ground styling */
+
+.top{
+    background: #85fde7;
+    width: 150vw;
+    height: 150vh;
+    transform: rotate(45deg);
+    position: relative;     
+    top: -70vh;
+    left:-70vw;
+    border: 15px solid #5BF7DB;
+    z-index: -1;
 }
 
 
-header{
+
+
+/* body */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top:0px;
     display: flex;
-    justify-content: space-between;
-    font-size: larger;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.menuItems{
-    display: flex;
-    gap:20px;
+.signupForm, .ProfileDetails{
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 50px;
+    background: white;
+    box-shadow: 5px 5px 5px #888888;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-    max-width: 600px;
-    margin: auto;
-    align-self: center;
-    padding-top: 20vh;
-}
-
-.title{
-    font-size: 30px;
-    margin-bottom: 20px;
+.details label, p{
+    font-size: 15px;
+    color: #696969;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    gap:10px;
 }
 
 form input{
-    background-color: black;
-    color: white;
-    border: none;
-    border-bottom: 1px solid white;
     outline: none;
     font-size: 16px;
     padding:10px;
+    min-width:270px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border:1px solid #888888;
 }
 
 button{
-    font-size: 23px;
-    width:fit-content;
-    padding :10px 30px;
+    padding:10px;
+    min-width:270px;
+    border-radius: 5px;
+    margin-bottom: 10px;
     margin-top: 15px;
+    background-color: #554FF0;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
 }
 
 
@@ -70,4 +96,30 @@ button{
 .detail{
     font-size: 20px;
     padding: 10px;
+}
+.suceessMessage{
+    color: #635Af7;
+}
+
+.A_head{
+    width: 40px;
+    height: 40px;
+    border: 6px solid #635Af7;
+    border-radius: 20px;
+}
+
+.shoulders{
+    width: 80px;
+    height: 40px;
+    border: 6px solid #635Af7;
+    border-bottom: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
 }

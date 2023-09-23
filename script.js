@@ -3,8 +3,10 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const ConfirmPassword = document.getElementById("passwordC");
 const container = document.getElementById("messageContainer");
-
+const user = JSON.parse(localStorage.getItem("userState"));
 const signup = document.getElementById("signUpBtn");
+
+if (user.token !== undefined) window.location.href = "./profile.html";
 
 function showError(message) {
   error = document.createElement("div");
